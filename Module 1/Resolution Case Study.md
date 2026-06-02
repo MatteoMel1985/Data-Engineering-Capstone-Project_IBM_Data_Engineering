@@ -34,4 +34,31 @@ Once ready, run the command below to create the database.
 CREATE DATABASE sales;
 ```
 
+## **Task 2 - Design a table named `sales_data`**  
+
+If the database was created correctly, you should see this output in the terminal. 
+
+```Bash
+Query OK, 1 row affected (0.01 sec)
+```
+
+To create the table named `sales_data` with the attributes shown in [Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%201/README.md#task-2---design-a-table-named-sales_data), inside the database `sales`, first select the database by running this command.
+
+```SQL
+USE sales;
+``` 
+
+If run correctly, you should see `Database changed` in the terminal. To create the table, write the following statement. 
+
+```SQL
+CREATE TABLE sales_data (
+    product_id INT,
+    customer_id INT,
+    price INT,
+    quantity INT,
+    `timestamp` DATETIME
+);
+```
+
+If run successfully, the terminal will show a similar output: `Query OK, 0 rows affected (0.03 sec)`.
 
