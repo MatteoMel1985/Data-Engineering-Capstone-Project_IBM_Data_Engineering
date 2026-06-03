@@ -175,3 +175,51 @@ Take the screenshot of the result and save it as `Task 5`.
 
 ![Task 5](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%201/Tasks/Task%205.png?raw=true)  
 
+## ***Task 6 - Write a bash script to export data***  
+
+To write the Bash script, we must exit the MySQL CLI by running the command below in the terminal. 
+
+```SQL
+exit
+```
+
+To create the file, write the following command.  
+
+```Bash
+nano datadump.sh
+```
+
+Inside the file, write the code below (ensure to replace correctly the host, the port, and the password with those found on your MySQL.  
+
+```Bash
+#!/bin/bash
+
+mysqldump --host=172.21.51.80 --port=3306 --user=root --password=INSERT_YOUR_PASSWORD sales sales_data > sales_data.sql
+```
+
+Save it by pressing simultaneously `CTRL` + `O`, then `Enter`, and `CTRL` + `X`.  
+
+The command exports the table `sales_dat`a from the database sales into a file named `sales_data.sql`.  Once saved, you will be able to see it in the Explorer pane of your EDI.  
+
+To make it executable, run the command below from your terminal.  
+
+```Bash
+chmod +x datadump.sh
+```
+
+`+x` adds execute permission to the file.  
+
+Finally, you can run the script by typing on the terminal.  
+
+```Bash
+./datadump.sh
+```
+
+If you have done everything correctly, the file [sales_data.sql](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%201/sales_data.sql) will be downloaded and visible in your Explorer pane.  
+
+Below is a screenshot of the Bash script, which I saved for the completion of `Task 6`.  
+
+![Task 6](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%201/Tasks/Task%206.png)
+
+
+
