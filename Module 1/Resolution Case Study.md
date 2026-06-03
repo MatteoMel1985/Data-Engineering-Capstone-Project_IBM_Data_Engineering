@@ -34,6 +34,10 @@ Once ready, run the command below to create the database.
 CREATE DATABASE sales;
 ```
 
+You can now take a screenshot of the result and save it as `Task 1`.  
+
+![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%201/Tasks/Task%201.png?raw=true)  
+
 ## **Task 2 - Design a table named `sales_data`**  
 
 If the database was created correctly, you should see this output in the terminal. 
@@ -60,7 +64,11 @@ CREATE TABLE sales_data (
 );
 ```
 
-If run successfully, the terminal will show a similar output: `Query OK, 0 rows affected (0.03 sec)`.
+If run successfully, the terminal will show a similar output: `Query OK, 0 rows affected (0.03 sec)`.  
+
+You can now take a screenshot of the result and save it as `Task 2`.
+
+![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%201/Tasks/Task%202.png?raw=true)
 
 # ***Exercise 3 - Load the Data***  
 
@@ -123,6 +131,10 @@ If loaded correcty, the output should show something similar:
 Query OK, 2604 rows affected (0.04 sec)
 Records: 2604  Deleted: 0  Skipped: 0  Warnings: 0
 ```
+
+You can now take a screenshot of the result and save it as `Task 3`. 
+
+![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%201/Tasks/Task%203.png?raw=true)
 
 # ***Exercise 4 - Set up Admin tasks***  
 
