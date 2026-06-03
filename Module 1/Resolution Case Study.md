@@ -139,3 +139,39 @@ You can now take a screenshot of the result and save it as `Task 3`.
 # ***Exercise 4 - Set up Admin tasks***  
 
 ## ***Task 4 - Create an index***  
+
+Ensure you are inside the `sales` database by running the command below. 
+
+```SQL
+USE sales;
+```
+
+Finally, to create the index `ts` on the column `timestamp`, you can run the statemenet below. I reccomend using backticks because `timestamp` is also a MySQL keyword/data type.  
+
+```SQL
+CREATE INDEX ts ON sales_data (`timestamp`);
+```
+
+You can take a screenshot of the result and save it as `Task 4`.
+
+![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%201/Tasks/Task%204.png?raw=true)  
+
+## ***Task 5 - List indexes***  
+
+To verify that the index was correctly created, run the code below.
+
+```SQL
+SHOW INDEX FROM sales_data;
+```
+
+You should see a row where.
+
+```Bash
+Key_name = ts
+Column_name = timestamp
+```
+
+Take the screenshot of the result and save it as `Task 5`.  
+
+![Task 5](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%201/Tasks/Task%205.png?raw=true)  
+
