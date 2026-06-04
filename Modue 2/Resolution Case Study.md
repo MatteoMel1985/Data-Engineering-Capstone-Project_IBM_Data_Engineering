@@ -41,3 +41,46 @@ The command `-O` tells `wget` to save the file `catalog.jso`. If everything was 
 # ***Exercise 2 - Working with MongoDB***  
 
 ## ***Task 1 Import data into MongoDB***  
+
+Before importing the file, start your MongoDB Database (as we did in the previous module with MySQL) by going on `Explorer Pane > MongoDB > Start`.  
+
+Once ready, you can import the file by running the command below. **NOTE**: Ensure to insert the host, the user, and the password provided by your MongoDB and visible in the section `Connection Information`.  
+
+```Bash
+mongoimport --host 172.21.200.76 --port 27017 -u root -p INSERT_YOUR_PASSWORD --authenticationDatabase admin --db catalog --collection electronics --file catalog.json
+```
+
+If imported correctly, you should see a similar output in the terminal.  
+
+```Bash
+connected to: mongodb://172.21.200.76:27017/
+XXX document(s) imported successfully. 0 document(s) failed to import.
+```
+
+You can now take a screenshot of the code and its output and save it as `Task1`.  
+
+![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%201.png?raw=true)  
+
+## ***Task 2 - List all databases***  
+
+Again, to list all databases, we'll have to run the MongoDB CLI command provided by MongoDB under `Connection Information` (ensure to use your own and don't copy mine, as it won't work in your EDI). 
+
+```Bash
+mongosh mongodb://root:xvwJpkmeX6cUq4heKmIEEnDp@172.21.200.76:27017
+```
+
+Once run, your terminal will appear as follows:
+
+```mongodb
+test>
+```
+
+Then, run the command below. 
+
+```nmongodb
+show dbs
+```
+
+You can now take a screenshot of the output and save it as `Task 2`.  
+
+![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%202.png?raw=true)
