@@ -104,3 +104,13 @@ You can now take a screenshot of the output and save it as `Task 3`.
 ![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%203.png?raw=true)  
 
 ## ***Task 4 - Create an index on the `type` field***  
+
+Create the index by running the command below.  
+
+```mongodb
+db.electronics.createIndex({ type: 1 })
+```
+
+`type_1` means that the index is created in ascending order. You can now take a screenshot of the code and its output and save it as `Task 4`.  
+
+![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%204.png?raw=true)
