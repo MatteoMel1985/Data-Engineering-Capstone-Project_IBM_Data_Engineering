@@ -113,4 +113,44 @@ db.electronics.createIndex({ type: 1 })
 
 `type_1` means that the index is created in ascending order. You can now take a screenshot of the code and its output and save it as `Task 4`.  
 
-![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%204.png?raw=true)
+![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%204.png?raw=true)  
+
+## ***Task 5 -Find the count of laptops***  
+
+To find the number of laptops in the database, run the command below. 
+
+```mongodb
+db.electronics.countDocuments({ type: "laptop" })
+```
+
+You can take a screenshot of the output and save it as `Task 5`.
+
+![Task 5](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%205.png?raw=true)  
+
+## ***Task 6 - Count smart phones with 6-inch screen size***  
+
+Similarly as we did in task 5, to count the smart phones with a 6-inch screen size, we can simply add the attribute `screen_size` and the value `6` to the query. 
+
+```mongodb
+db.electronics.countDocuments({ type: "smart phone", "screen size": 6 })
+```
+
+Take a screenshot of the output and save it as `Task 6`.  
+
+![Task 6](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%206.png?raw=true)  
+
+## ***Task 7 - Find average screen size of smart phones***  
+
+To find the average screen size of smart phones, we will use the `aggregate()` method, which allows MongoDB to process documents through a sequence of stages. The first stage filters the documents in the `electronics` collection and keeps only the records where the type field is equal to `"smart phone"`. The second stage groups the remaining documents by their `type` field. Since the previous stage selected only smart phones, all documents are grouped under `"smart phone"`. The expression `avg_screen_size: { $avg: "$screen size" }` calculates the average value of the "screen size" field for all smart phone documents.
+
+```mongodb
+db.electronics.aggregate([
+  { $match: { type: "smart phone" } },
+  { $group: { _id: "$type", avg_screen_size: { $avg: "$screen size" } } }
+])
+```
+
+You can now take a screenshot of the output and save it as `Task 7`.  
+
+![Task 7](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%207.png?raw=true)  
+
