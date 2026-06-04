@@ -59,7 +59,7 @@ XXX document(s) imported successfully. 0 document(s) failed to import.
 
 You can now take a screenshot of the code and its output and save it as `Task1`.  
 
-![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%201.png?raw=true)  
+![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%201.png?raw=true)  
 
 ## ***Task 2 - List all databases***  
 
@@ -83,7 +83,7 @@ show dbs
 
 You can now take a screenshot of the output and save it as `Task 2`.  
 
-![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%202.png?raw=true)  
+![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%202.png?raw=true)  
 
 ## ***Task 3 - List all collections in the `catalog` database***  
 
@@ -101,7 +101,7 @@ show collections
 
 You can now take a screenshot of the output and save it as `Task 3`.
 
-![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%203.png?raw=true)  
+![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%203.png?raw=true)  
 
 ## ***Task 4 - Create an index on the `type` field***  
 
@@ -113,4 +113,4 @@ db.electronics.createIndex({ type: 1 })
 
 `type_1` means that the index is created in ascending order. You can now take a screenshot of the code and its output and save it as `Task 4`.  
 
-![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%204.png?raw=true)
+![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%204.png?raw=true)
