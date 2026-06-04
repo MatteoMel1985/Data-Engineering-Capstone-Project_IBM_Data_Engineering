@@ -154,3 +154,20 @@ You can now take a screenshot of the output and save it as `Task 7`.
 
 ![Task 7](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%207.png?raw=true)  
 
+## ***Task 8 - Export selected fields to a CSV file***  
+
+Finally, to conclude this module, we'll have to exit the MongoDB CLI by running the command
+
+```mongodb
+exit
+```
+
+Finally, back in the termina, to export the file, we'll have to run the `mongoexport` command below. **Note**: nesure to apply the host, port, user, and password provided by your MongoDB. Do not copy mine, or else the command won't work.
+
+```bash
+mongoexport --host 172.21.200.76 --port 27017 -u root -p INSERT_YOUR_PASSOWRD --authenticationDatabase admin --db catalog --collection electronics --type=csv --fields _id,type,model --out electronics.csv
+```
+
+You can finally take a screenshot of the output and save it as `Task 8`.
+
+![Task 8](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%208.png?raw=true)  
