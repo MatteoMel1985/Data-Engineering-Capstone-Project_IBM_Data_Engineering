@@ -103,4 +103,4 @@ You can now take a screenshot of the output and save it as `Task 3`.
 
 ![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%203.png?raw=true)  
 
-
+## ***Task 4 - Create an index on the `type` field***  
