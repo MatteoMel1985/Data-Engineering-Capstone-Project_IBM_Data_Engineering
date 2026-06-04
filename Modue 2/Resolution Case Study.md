@@ -83,4 +83,24 @@ show dbs
 
 You can now take a screenshot of the output and save it as `Task 2`.  
 
-![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%202.png?raw=true)
+![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%202.png?raw=true)  
+
+## ***Task 3 - List all collections in the `catalog` database***  
+
+To list all collections in the `catalog` databas, we must first instruct MongoDB that we are using `catalog` by running this command.  
+
+```mongodb
+`catalog`
+```
+
+The terminal should respond `switched to db catalog`. Then, we can proceed by running.  
+
+```mongodb
+show collections
+```
+
+You can now take a screenshot of the output and save it as `Task 3`.
+
+![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Modue%202/Tasks/Task%203.png?raw=true)  
+
+
