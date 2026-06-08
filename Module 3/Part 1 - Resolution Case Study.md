@@ -31,3 +31,28 @@ You will then be able to access the pgAdmin GUI tool.
 In the left tree-view, right-click on `Databases > Create > Database`.   
 
 <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/3.png" width="100%">
+
+Once the window is opened, name the database `softcart`, and click the `Save` button. Now
+
+1. Select the `softcart` database.
+2. Go to the top menu.
+3. Click: `Tools > ERD Tool`
+
+This opens the diagram editor where you can design the table visually. In the ERD tool, click the Add Table button (a small `+` icon in the top ribbon).
+
+Name the table `softcartDimDate`. 
+
+Do not click on the `Save` button yet. Proceed on the `Columns` tab, and click on the `+` icon on the top-right side of the window. 
+
+| Column name | Data type | Length/Precision | Primary Key? |
+| ----------- | --------- | ---------------- | ------------ |
+| dateid | integer | | Yes | 
+| date | date | | |  
+| year | integer
+| quarter | integer
+| quartername | character varying(2)
+| month | integer
+| monthname       character varying(10)
+| day             integer
+| weekday         integer
+| weekdayname     character varying(10)
