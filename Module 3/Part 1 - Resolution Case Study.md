@@ -48,11 +48,11 @@ Do not click on the `Save` button yet. Proceed on the `Columns` tab, and click o
 | ----------- | --------- | ---------------- | ------------ |
 | dateid | integer | | Yes | 
 | date | date | | |  
-| year | integer
-| quarter | integer
-| quartername | character varying(2)
-| month | integer
-| monthname       character varying(10)
-| day             integer
-| weekday         integer
-| weekdayname     character varying(10)
+| year | integer | | 
+| quarter | integer| | 
+| quartername | character varying | 2 | | 
+| month | integer | | 
+| monthname | character varying | 10 | | 
+| day | integer | | 
+| weekday | integer | | 
+| weekdayname | character varying | 10 | | 
