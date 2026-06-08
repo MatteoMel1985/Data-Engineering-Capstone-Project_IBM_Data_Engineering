@@ -120,5 +120,69 @@ Take a screenshot of the result in your ERD and save it as `Task 4`.
 
 ![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%204.png?raw=true)  
 
+## ***Task 5 - Design the fact table `softcartFactSales`***  
 
+Repeat the same procedure explained in Task 1, but save the table as `softcartFactSales` and insert the values below.  
+
+<div align="center">
+
+| Column name | Data type | Length/Precision | Primary Key? |
+| :---: | :---: | :---: | :---: |
+| dateid | integer | | |
+| orderid | integer | | Yes |
+| categoryid | integer | | |
+| itemid | integer | | |
+| countryid | integer | | |
+| price | money | | |
+
+</div>  
+
+Take a screenshot of the result in your ERD and save it as `Task 5`.  
+
+## ***Task 6 - Design the relationships***  
+
+Now it is time to design the relationships among the tables based on the logic illustrated below. 
+
+<div align="center">
+
+| Local Table | Local Column | Referenced Table | Referenced Column |
+| :---: | :---: | :---: | :---: |
+| softcartFactSales | dateid | softcartDimDate | dateid |
+| softcartFactSales | categoryid | softcartDimCategory | categoryid |
+| softcartFactSales | itemid | softcartDimItem | itemid |
+| softcartFactSales | countryid | softcartDimCountry | countryid |
+
+</div>  
+
+Start by clickin on the `softcartFactSales` table on your ERD tool, and select the One to Many connector on the top ribbon (the small `1M` icon). A new window will open; fill it with the information below and click save.  
+
+```
+Local Table: softcartFactSales
+Local Column: dateid
+Referenced Table: softcartDimDate
+Referenced Column: dateid
+```
+
+Repeat the process other 3 times and insert the information below.  
+
+```
+Local Table: softcartFactSales
+Local Column: categoryid
+Referenced Table: softcartDimCategory
+Referenced Column: categoryid
+```
+
+```
+Local Table: softcartFactSales
+Local Column: itemid
+Referenced Table: softcartDimItem
+Referenced Column: itemid
+```
+
+```
+Local Table: softcartFactSales
+Local Column: countryid
+Referenced Table: softcartDimCountry
+Referenced Column: countryid
+```
 
