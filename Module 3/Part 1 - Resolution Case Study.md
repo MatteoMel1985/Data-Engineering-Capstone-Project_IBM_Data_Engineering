@@ -67,7 +67,7 @@ Ensure that the attribute `dateid` is marked as Primary Key. Click on the `Save`
 
 Now you can take a screenshot of the result and save it as `Task 1`.
 
-![Task 1]([)](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%201.png?raw=true)  
+![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%201.png?raw=true)  
 
 ## ***Task 2 - Design the dimension table `softcartDimCategory`***  
 
