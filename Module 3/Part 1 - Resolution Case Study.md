@@ -44,6 +44,8 @@ Name the table `softcartDimDate`.
 
 Do not click on the `Save` button yet. Proceed on the `Columns` tab, and click on the `+` icon on the top-right side of the window. 
 
+Manually fill each column with the attributes and information below.
+
 <div align="center">
 
 | Column name | Data type | Length/Precision | Primary Key? |
@@ -59,4 +61,64 @@ Do not click on the `Save` button yet. Proceed on the `Columns` tab, and click o
 | weekday | integer | |  
 | weekdayname | character varying | 10 | |  
 
-</div>
+</div>  
+
+Ensure that the attribute `dateid` is marked as Primary Key. Click on the `Save`
+
+Now you can take a screenshot of the result and save it as `Task 1`.
+
+![Task 1]([)](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%201.png?raw=true)  
+
+## ***Task 2 - Design the dimension table `softcartDimCategory`***  
+
+Repeat the same procedure explained in Task 1, but save the table as `softcartDimCategory` and insert the values below. 
+
+<div align="center">
+
+| Column name | Data type | Length/Precision | Primary Key? |
+| :---: | :---: | :---: | :---: |
+| categoryid | integer | | Yes |
+| category | character varying | 10 | |
+
+</div>  
+
+Take a screenshot of the result in your ERD and save it as `Task 2`.  
+
+![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%202.png?raw=true)  
+
+## ***Task 3 - Design the dimension table `softcartDimItem`***  
+
+Repeat the same procedure explained in Task 1, but save the table as `softcartDimItem` and insert the values below.  
+
+<div align="center">
+
+| Column name | Data type | Length/Precision | Primary Key? |
+| :---: | :---: | :---: | :---: |
+| itemid | integer | | Yes |
+| item | character varying | 10 | |
+
+</div>  
+
+Take a screenshot of the result in your ERD and save it as `Task 3`.
+
+![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%203.png?raw=true)  
+
+## ***Task 4 - Design the dimension table `softcartDimCountry`***  
+
+Repeat the same procedure explained in Task 1, but save the table as `softcartDimCountry` and insert the values below.  
+
+<div align="center">
+
+| Column name | Data type | Length/Precision | Primary Key? |
+| :---: | :---: | :---: | :---: |
+| countryid | integer | | Yes |
+| country | character varying | 100 | |
+
+</div>  
+
+Take a screenshot of the result in your ERD and save it as `Task 4`.  
+
+![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%204.png?raw=true)  
+
+
+
