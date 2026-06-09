@@ -220,3 +220,24 @@ Once run, you can take a screenshot of it and save it as `Task 7`.
 ![Task 7](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%207.png?raw=true)  
 
 ## ***Task 8 - Create an MQT***   
+
+MQT means Materialized Query Table. In PostgreSQL, this is usually created as a materialised view. A normal view stores only the query definition, but every time you query it, PostgreSQL recalculates the result. On the other hand, a materialized view stores the actual result of the query. This makes it useful for reports and dashboards because the aggregated data is already prepared.
+
+## ***Task 8 - Create an MQT***   
+
+The MQT below use the columns `country`, and `total_sales`.  
+
+```SQL
+CREATE MATERIALIZED VIEW total_sales_per_country AS
+SELECT
+    TRIM(c.country) AS country,
+    SUM(f.amount) AS total_sales
+FROM "FactSales" f
+JOIN "DimCountry" c
+    ON f.countryid = c.countryid
+GROUP BY c.country;
+```
+
+Once run, you can take a screenshot of it and save it as `Task 8`.  
+
+![Task 8](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%208.png?raw=true)
