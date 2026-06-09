@@ -168,3 +168,55 @@ Once run, you can take a screenshot of it and save it as `Task 5`.
 ![Task 5](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%205.png?raw=true)  
 
 ## ***Task 6 - Create a rollup query***   
+
+A rollup query creates hierarchical totals. If you group by `ROLLUP(year, country)`, PostgreSQL calculates: `Sales by year and country`, `Sales by year only`, and `Grand total`. So, unlike grouping sets, where you manually choose each grouping combination, rollup automatically follows a hierarchy from left to right.  
+
+The rollup below use the columns `year`, `country`, and `totalsales`.  
+
+```SQL
+SELECT
+    d.year,
+    TRIM(c.country) AS country,
+    SUM(f.amount) AS totalsales
+FROM "FactSales" f
+JOIN "DimDate" d
+    ON f.dateid = d.dateid
+JOIN "DimCountry" c
+    ON f.countryid = c.countryid
+GROUP BY ROLLUP(d.year, c.country)
+ORDER BY
+    d.year,
+    c.country;
+```
+
+Once run, you can take a screenshot of it and save it as `Task 6`.  
+
+![Task 6](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%206.png?raw=true)  
+
+## ***Task 7 - Create a cube query***   
+
+A cube query creates aggregations for all possible combinations of the selected grouping columns. If you write `GROUP BY CUBE(year, country)`, PostgreSQL calculates `Average sales by year and country`, `Average sales by year only`, `Average sales by country only`, and `Overall average sales`; so, while `ROLLUP(year, country)` follows a hierarchy, `CUBE(year, country)` gives every possible subtotal combination.  
+
+The cube query below use the columns `year`, `country`, and `average sales`.  
+
+```SQL
+SELECT
+    d.year,
+    TRIM(c.country) AS country,
+    AVG(f.amount) AS averagesales
+FROM "FactSales" f
+JOIN "DimDate" d
+    ON f.dateid = d.dateid
+JOIN "DimCountry" c
+    ON f.countryid = c.countryid
+GROUP BY CUBE(d.year, c.country)
+ORDER BY
+    d.year,
+    c.country;
+```
+
+Once run, you can take a screenshot of it and save it as `Task 7`.  
+
+![Task 7](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%207.png?raw=true)  
+
+## ***Task 8 - Create an MQT***   
