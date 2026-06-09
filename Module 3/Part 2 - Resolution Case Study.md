@@ -29,3 +29,15 @@ You will then be able to access the pgAdmin GUI tool.
 In the left tree-view, right-click on `Databases > Create > Database`.   
 
 <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/3.png" width="100%">
+
+Once the window is opened, name the database `Test1`, and click the `Save` button. Now  
+
+1. Select the `Test1` database.
+2. Go to the top menu.
+3. Click: Tools > Query Tool
+
+This opens the diagram editor where you can design the table visually. In the ERD tool, click the Open File button (a small folder icon in the top ribbon). Once the window opens, it should be set by default on the path `/home/`. That is not suitable for uploading the file [CREATE_SCRIPT.sql](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Script%20and%20CSVs/CREATE_SCRIPT.sql). To do so, ensure to navigate on the path `/var/lib/pgadmin/`. Once there, click on the three-dot icon on the upper right of the window.  
+
+![Screenshot_2](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_2.PNG?raw=true)  
+
+
