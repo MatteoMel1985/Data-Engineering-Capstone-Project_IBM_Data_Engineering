@@ -241,3 +241,11 @@ GROUP BY c.country;
 Once run, you can take a screenshot of it and save it as `Task 8`.  
 
 ![Task 8](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%208.png?raw=true)
+
+If you wish to save your MQT on your disk, you can run the string below from your terminal. **NOTE**: Ensure to insert the passowrd, host, port, and user provided by your PostgreSQL. 
+
+```Bash
+PGPASSWORD='INSERT_YOUR_PASSOWRD' psql -h 172.21.242.196 -p 5432 -U postgres -d Test1 -c "\COPY (SELECT * FROM total_sales_per_country) TO '/home/project/total_sales_per_country.csv' WITH CSV HEADER;"
+```
+
+
