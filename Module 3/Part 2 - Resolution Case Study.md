@@ -36,8 +36,17 @@ Once the window is opened, name the database `Test1`, and click the `Save` butto
 2. Go to the top menu.
 3. Click: Tools > Query Tool
 
-This opens the diagram editor where you can design the table visually. In the ERD tool, click the Open File button (a small folder icon in the top ribbon). Once the window opens, it should be set by default on the path `/home/`. That is not suitable for uploading the file [CREATE_SCRIPT.sql](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Script%20and%20CSVs/CREATE_SCRIPT.sql). To do so, ensure to navigate on the path `/var/lib/pgadmin/`. Once there, click on the three-dot icon on the upper right of the window.  
+This opens the diagram editor where you can design the table visually. In the ERD tool, click the Open File button (a small folder icon in the top ribbon). Once the window opens, it should be set by default on the path `/home/`. That is not suitable for uploading the file [CREATE_SCRIPT.sql](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Script%20and%20CSVs/CREATE_SCRIPT.sql). To do so, ensure to navigate on the path `/var/lib/pgadmin/`. Once there, click on the three-dot icon on the upper right of the window and select `Upload`.  
 
-![Screenshot_2](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_2.PNG?raw=true)  
+![Screenshot_3](https://raw.githubusercontent.com/MatteoMel1985/Relational-Dataset-Images/2d9f7a02822edb250d639296a849b4ce9cf0316a/Data%20Warehouse/Screenshot_3.PNG)  
 
+Drag and drop the file `CREATE_SCRIPT.sql` and, once uploaded, click on the highlighted small `x` icon. 
+
+![Screenshot_4](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_4.PNG?raw=true)  
+
+Finally, highlight the file `CREATE_SCRIPT.sql`, and click on the `Select` button on the bottom-right corner of the window. You can now run the script and take a screenshot of it.  
+
+![Prepare the lab](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Prepare%20the%20lab.png?raw=true)  
+
+## ***Task 1 - Load data into the dimension table DimDate***   
 
