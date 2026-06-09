@@ -90,4 +90,81 @@ FROM "DimDate"
 LIMIT 5;
 ```
 
-Take a screenshot of the output and name it `9-DimDate.png`
+Take a screenshot of the output and name it `Task 1`.  
+
+![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%201.png?raw=true)
+
+## ***Task 2 - Load data into the dimension table DimCategory***   
+
+Repeat the same procedure explained in Task 1, but with the table `DimCategory`. Run the SQL query below.
+
+```SQL
+SELECT *
+FROM "DimCategory"
+LIMIT 5;
+```
+
+Take a screenshot of the output and name it `Task 2`.  
+
+![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%202.png?raw=true)  
+
+## ***Task 3 - Load data into the dimension table DimCountry***   
+
+Repeat the same procedure explained in Task 1, but with the table `DimCountry`. Run the SQL query below.  
+
+```SQL
+SELECT *
+FROM "DimCountry"
+LIMIT 5;
+```
+
+Take a screenshot of the output and name it `Task 3`.  
+
+![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%203.png?raw=true)  
+
+## ***Task 4 - Load data into the fact table FactSales***   
+
+Repeat the same procedure explained in Task 1, but with the table `FactSales`. Run the SQL query below.  
+
+```SQL
+SELECT *
+FROM "FactSales"
+LIMIT 5;
+```
+
+Take a screenshot of the output and name it `Task 4`.  
+
+![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%204.png?raw=true)  
+
+## ***Task 5 - Create a grouping sets query***   
+
+A grouping set allows you to calculate multiple levels of aggregation in one query. For example, instead of writing separate queries for 'Total sales by country and category', `Total sales by country only`, `Total sales by category only`, and `Grand total sales`, we can calculate all of them together using `GROUP BY GROUPING SETS (...)`.
+
+The grouping sets below use the columns `country`, `category`, and `totalsales.`  
+
+```SQL
+SELECT 
+    TRIM(c.country) AS country,
+    TRIM(cat.category) AS category,
+    SUM(f.amount) AS totalsales
+FROM "FactSales" f
+JOIN "DimCountry" c
+    ON f.countryid = c.countryid
+JOIN "DimCategory" cat
+    ON f.categoryid = cat.categoryid
+GROUP BY GROUPING SETS (
+    (c.country, cat.category),
+    (c.country),
+    (cat.category),
+    ()
+)
+ORDER BY 
+    country,
+    category;
+```
+
+Once run, you can take a screenshot of it and save it as `Task 5`.  
+
+![Task 5](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%205.png?raw=true)  
+
+## ***Task 6 - Create a rollup query***   
