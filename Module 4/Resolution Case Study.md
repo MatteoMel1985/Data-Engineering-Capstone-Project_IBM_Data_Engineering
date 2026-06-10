@@ -18,17 +18,9 @@ Then proceed as follows:
 
 The screenshot for this task should show that the file `ecommerce.csv` has been successfully loaded into Looker Studio.  
 
-You can now save the screenshot as:  
+You can now save the screenshot as `Task 1.png`.  
 
-```text
-Task 1.png
-```  
-
-If you later include this guide in your GitHub repository, you can insert the screenshot below:  
-
-```markdown
-![Task 1](INSERT_YOUR_IMAGE_URL_HERE)
-```  
+![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%201.png?raw=true) 
 
 ## ***Task 2 - List first 10 rows***  
 
@@ -46,17 +38,9 @@ To do so, create a simple table in the report:
 
 A good table for the screenshot should include several meaningful fields, such as the date/order field, category field, product field, quantity field, and sales/price field, depending on the exact column names displayed by Looker Studio.  
 
-You can now take a screenshot and save it as:  
+You can now take a screenshot and save it as `Task 2.png`.  
 
-```text
-Task 2.png
-```  
-
-If you later include this guide in your GitHub repository, you can insert the screenshot below:  
-
-```markdown
-![Task 2](INSERT_YOUR_IMAGE_URL_HERE)
-```  
+![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%202.png?raw=true)
 
 # ***Exercise 2 - Accessing the Data Source in Google Looker Studio***  
 
@@ -74,55 +58,9 @@ If you are still inside the report, you can access the data source from the righ
 
 The screenshot should show the created data source and its fields.  
 
-You can now save the screenshot as:  
+You can now save the screenshot as `Task 3.png`.
 
-```text
-Task 3.png
-```  
-
-If you later include this guide in your GitHub repository, you can insert the screenshot below:  
-
-```markdown
-![Task 3](INSERT_YOUR_IMAGE_URL_HERE)
-```  
-
-# ***Before Exercise 3 - Check or create useful fields***  
-
-Before creating the dashboard charts, it is useful to check whether the dataset already contains the fields needed for the assignment.  
-
-The three charts require the following information:  
-
-| Requirement | Field needed |
-|---|---|
-| Month-wise total sales for 2020 | Date, Month, Year, Sales or Amount |
-| Category-wise total sales | Category, Sales or Amount |
-| Quarterly sales of mobile phones | Quarter, Category/Product Type, Sales or Amount |
-
-Depending on how Looker Studio detects the CSV fields, you may already have fields such as `year`, `month`, `quarter`, `category`, and `sales`. If they already exist, use them directly.  
-
-If some fields are missing, you can create calculated fields from the data source.  
-
-For example, if your file has a date field, you can create these calculated fields:  
-
-```text
-Year = YEAR(Date)
-```  
-
-```text
-Month = MONTH(Date)
-```  
-
-```text
-Quarter = QUARTER(Date)
-```  
-
-If the dataset does not have a ready-made sales field, but it has `Quantity` and `Price`, create a calculated field similar to this:  
-
-```text
-Total Sales = Quantity * Price
-```  
-
-The exact field names may be slightly different in Looker Studio. Therefore, use the names that appear in your uploaded `ecommerce.csv` file. For example, if your date field is called `OrderDate`, use `YEAR(OrderDate)` instead of `YEAR(Date)`.  
+![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%203.png?raw=true)
 
 # ***Exercise 3 - Create a dashboard***  
 
@@ -161,17 +99,9 @@ If you need to create the filter manually:
 
 The final result should be a line chart with months on the horizontal axis and total sales on the vertical axis.  
 
-You can now take a screenshot and save it as:  
+You can now take a screenshot and save it as `Task 4.png`.
 
-```text
-Task 4.png
-```  
-
-If you later include this guide in your GitHub repository, you can insert the screenshot below:  
-
-```markdown
-![Task 4](INSERT_YOUR_IMAGE_URL_HERE)
-```  
+![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%204.png?raw=true)
 
 ## ***Task 5 - Create a pie chart***  
 
@@ -196,17 +126,9 @@ This pie chart should show how much each product category contributes to total s
 
 If the chart shows too many categories, you may keep the default grouping or let Looker Studio group smaller values into `Others`, if available.  
 
-You can now take a screenshot and save it as:  
+You can now take a screenshot and save it as `Task 5.png`.
 
-```text
-Task 5.png
-```  
-
-If you later include this guide in your GitHub repository, you can insert the screenshot below:  
-
-```markdown
-![Task 5](INSERT_YOUR_IMAGE_URL_HERE)
-```  
+![Task 5](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%205.png?raw=true)
 
 ## ***Task 6 - Create a bar chart***  
 
@@ -237,89 +159,6 @@ To filter only mobile phones:
 
 The final result should show one bar for each quarter, usually Q1, Q2, Q3, and Q4, with the total sales of mobile phones for each quarter.  
 
-You can now take a screenshot and save it as:  
+You can now take a screenshot and save it as `Task 6`.
 
-```text
-Task 6.png
-```  
-
-If you later include this guide in your GitHub repository, you can insert the screenshot below:  
-
-```markdown
-![Task 6](INSERT_YOUR_IMAGE_URL_HERE)
-```  
-
-# ***Final checklist***  
-
-Before submitting the assignment, make sure you have all required screenshots:  
-
-| Task | Required evidence | Suggested file name |
-|---|---|---|
-| Task 1 | Successful loading of `ecommerce.csv` | `Task 1.png` |
-| Task 2 | First 10 rows of the table | `Task 2.png` |
-| Task 3 | Data source created in Looker Studio | `Task 3.png` |
-| Task 4 | Line chart of month-wise total sales for 2020 | `Task 4.png` |
-| Task 5 | Pie chart of category-wise total sales | `Task 5.png` |
-| Task 6 | Bar chart of quarterly sales of mobile phones | `Task 6.png` |
-
-# ***Common issues and corrections***  
-
-## ***The CSV file does not upload***  
-
-If the CSV file does not upload, check that:  
-
-* the file is actually saved as `ecommerce.csv`;  
-* the file was not downloaded as an HTML page by mistake;  
-* you are using the **File Upload** connector;  
-* your Google account has permission to use Looker Studio.  
-
-## ***The date field is not recognised as a date***  
-
-If Looker Studio imports the date as text, open the data source schema and change the field type to **Date**.  
-
-If the date format is not recognised automatically, check the format used in the CSV file and select the appropriate date type in the field settings.  
-
-## ***The sales metric is not summed correctly***  
-
-If sales are not displayed correctly, check the metric aggregation. It should usually be set to **SUM**, not **COUNT**.  
-
-If you only have price and quantity, create this calculated field:  
-
-```text
-Total Sales = Quantity * Price
-```  
-
-Then use `Total Sales` as the metric and set its aggregation to **SUM**.  
-
-## ***The mobile phone bar chart shows all products***  
-
-If the bar chart shows all products instead of only mobile phones, the filter was probably not applied correctly.  
-
-Open the chart setup panel and verify that the filter includes only the mobile phone category or product type. Use the exact spelling found in the dataset.  
-
-For example, the value might be:  
-
-```text
-mobile phone
-```  
-
-or:  
-
-```text
-Mobile Phones
-```  
-
-or:  
-
-```text
-Cell Phone
-```  
-
-Use whichever value appears in your actual `ecommerce.csv` file.  
-
-# ***End of assignment***  
-
-Once all six screenshots have been saved, the Module 4 assignment is complete.  
-
-# Author  
-# ***[Matteo Meloni](https://www.linkedin.com/in/matteo-meloni-40a357154/)***
+![Task 6](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%206.png?raw=true)
