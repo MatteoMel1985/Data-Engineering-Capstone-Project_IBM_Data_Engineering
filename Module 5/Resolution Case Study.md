@@ -169,3 +169,9 @@ task_id="extract_data"
 
 This is the name that will appear in the Airflow interface, whereas the shell operation executed by Airflow is defined by `bash_command=...`. The task is associated with your DAG using `dag=dag`.
 
+You can now take a screenshot of the section and save it as `Task 3`.  
+
+![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%203.png?raw=true)  
+
+## ***Task 4 - Create a task to transform the data in the txt file***  
+
