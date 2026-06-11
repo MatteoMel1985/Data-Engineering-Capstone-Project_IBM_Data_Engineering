@@ -127,4 +127,45 @@ catchup=False
 
 You can take a screenshot of the section and save it as `Task 2`. 
 
-![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%202.png?raw=true)
+![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%202.png?raw=true)  
+
+## ***Task 3 - Create a task to extract data***  
+
+Add the followng section below the `process_web_log` section.  
+
+```Python
+extract_data = BashOperator(
+    task_id="extract_data",
+    bash_command=(
+        "awk '{print $1}' "
+        "/home/project/airflow/dags/capstone/accesslog.txt "
+        "> /home/project/airflow/dags/capstone/extracted_data.txt"
+    ),
+    dag=dag,
+)
+```
+
+The central shell command is:  
+
+```Bash
+awk '{print $1}' accesslog.txt > extracted_data.txt
+```
+
+which prints only that first field from every line.  
+
+The redirection operator
+
+```Bash
+>
+```
+
+writes the output into `extracted_data.txt`.  
+
+The task name is defined here
+
+```Python
+task_id="extract_data"
+```
+
+This is the name that will appear in the Airflow interface, whereas the shell operation executed by Airflow is defined by `bash_command=...`. The task is associated with your DAG using `dag=dag`.
+
