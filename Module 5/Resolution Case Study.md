@@ -56,7 +56,7 @@ touch process_web_log.py
 
 Once appearing in the left pane of the EDI, double click the file, so as to script it from the editor pane, on top of the terminal. Add the following code.  
 
-```Bash
+```Python
 from datetime import datetime, timedelta
 
 from airflow import DAG
@@ -83,4 +83,48 @@ Take a screenshot of the code you have written and save it as `Task 1`.
 
 ## ***Task 2 - Define the DAG***  
 
+Add the followng section below the DAG arguments.
 
+```Python
+dag = DAG(
+    dag_id="process_web_log",
+    default_args=default_args,
+    description="A daily pipeline that processes web server log data",
+    schedule="@daily",
+    catchup=False,
+)
+```
+
+The following line assigns the required name to the DAG.
+
+```Python
+dag_id="process_web_log"
+```
+
+This connects the DAG to the arguments defined in Task 1:
+
+```Python
+default_args=default_args
+```
+
+This provides a suitable description:
+
+```Python
+description="A daily pipeline that processes web server log data"
+```
+
+This schedules the DAG to run once per day:
+
+```Python
+schedule="@daily"
+```
+
+Finally, the line below prevents Airflow from automatically creating historical DAG runs for every missed daily interval between the `start_date` and the present date. This is useful in a lab because it avoids generating many unnecessary runs.  
+
+```Python
+catchup=False
+```
+
+You can take a screenshot of the section and save it as `Task 2`. 
+
+![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%202.png?raw=true)
