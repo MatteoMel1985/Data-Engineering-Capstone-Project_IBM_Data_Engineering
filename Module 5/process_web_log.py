@@ -1,4 +1,3 @@
-```python
 # Importing the required Python and Apache Airflow libraries
 
 from datetime import datetime, timedelta
@@ -71,4 +70,3 @@ load_data = BashOperator(
 # Defining the execution order of the pipeline tasks
 
 extract_data >> transform_data >> load_data
-```
