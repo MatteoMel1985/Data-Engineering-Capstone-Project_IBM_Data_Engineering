@@ -33,4 +33,11 @@ This module applies PySpark to analyse e-commerce search-term data. It includes 
 
 # Certificate of Completion  
 
-![Certificate]()
+![Certificate](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/X9KMNLL5WF2E.png?raw=true)  
+
+# [Verification Link](https://coursera.org/share/055db5fa9d10018ea068aeb0315c90c5)  
+
+https://coursera.org/share/055db5fa9d10018ea068aeb0315c90c5
+
+# Author
+# ***[Matteo Meloni](https://www.linkedin.com/in/matteo-meloni-40a357154/)***
