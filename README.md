@@ -37,7 +37,7 @@ This module applies PySpark to analyse e-commerce search-term data. It includes 
 
 # [Verification Link](https://coursera.org/verify/X9KMNLL5WF2E)  
 
-[https://coursera.org/share/055db5fa9d10018ea068aeb0315c90c5](https://coursera.org/share/7fb93acd4ae601be0f639c55e57850fb)
+[https://coursera.org/verify/X9KMNLL5WF2E](https://coursera.org/verify/X9KMNLL5WF2E)
 
 # Author
 # ***[Matteo Meloni](https://www.linkedin.com/in/matteo-meloni-40a357154/)***
