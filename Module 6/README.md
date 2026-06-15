@@ -197,3 +197,96 @@ For example, a pipeline may combine `VectorAssembler`, `StandardScaler`, and `Li
 In simple terms, a pipeline is the full path followed by the data, from raw input to final prediction.  
 
 <h1 align="center"><i>Model Evaluation</i></h1>  
+
+After a model has been trained and used to generate predictions, it is necessary to evaluate how good those predictions are.
+
+Model evaluation is the process of measuring the performance of a machine learning model.
+
+The purpose of model evaluation is to answer questions such as:
+
+> How close are the predictions to the real values?
+
+> Is the model reliable?
+
+> Is the model accurate enough to be useful?
+
+> Is the model learning meaningful patterns, or is it making poor predictions?
+
+Different types of machine learning problems require different evaluation metrics. For regression problems, where the target variable is numerical, common metrics include Mean Squared Error, Mean Absolute Error, and R-Squared.  
+
+# ***Mean Squared Error***  
+
+Mean Squared Error, or MSE, measures the average squared difference between the real values and the predicted values.
+
+The formula is:
+
+MSE = average of (actual value - predicted value)²
+
+The error is squared, which means that larger errors are penalised more heavily than smaller errors.
+
+For example, an error of `10` becomes `100`, while an error of `2` becomes `4`.
+
+This makes MSE useful when large prediction errors are especially undesirable.
+
+A lower MSE means that the model is performing better.
+
+In simple terms, Mean Squared Error tells us:  
+
+> How large are the model’s errors on average, with large errors receiving extra penalty?
+
+# ***Mean Absolute Error***  
+
+Mean Absolute Error, or MAE, measures the average absolute difference between the real values and the predicted values.
+
+The formula is:
+
+MAE = average of |actual value - predicted value|
+
+Unlike MSE, MAE does not square the errors. This means it is easier to interpret because it remains in the same unit as the original target variable.
+
+For example, if the model is predicting prices in dollars, the MAE is also expressed in dollars.
+If the model is predicting sound levels in decibels, the MAE is also expressed in decibels.
+
+A lower MAE means that the model’s predictions are closer to the real values.
+
+In simple terms, Mean Absolute Error tells us:  
+
+> On average, how far are the predictions from the real values?
+
+# ***R-Squared***  
+
+R-Squared, also written as R², measures how much of the variation in the target variable is explained by the model.  
+
+Its value is usually between `0` and `1`.
+
+A value close to `1` means that the model explains a large part of the variation in the data.
+A value close to `0` means that the model explains very little of the variation.
+
+For example:
+
+R² = 0.90
+
+Means that the model explains about 90% of the variation in the target variable.
+
+R² = 0.20
+
+Means that the model explains only about 20% of the variation.
+
+In simple terms, R-Squared tells us:
+
+> How well does the model explain the behaviour of the target variable?
+
+However, R-Squared should not be used alone. A high R-Squared does not always mean that the model is perfect, and it should usually be interpreted together with other metrics such as MSE and MAE.  
+
+<h1 align="center"><i>Final Notes</i></h1>  
+
+Prediction algorithms allow a machine learning model to learn relationships and patterns from data.
+
+Model evaluation allows us to measure whether those predictions are accurate and reliable.
+
+In Apache Spark, these concepts can be applied at scale through Spark MLlib, making it possible to build machine learning workflows for large datasets using distributed computing.
+
+In this module, these ideas are introduced through a practical Spark ML pipeline, where the data is prepared, transformed, used to train a Linear Regression model, evaluated with regression metrics, and saved for future use.  
+
+# Author
+# ***[Matteo Meloni](https://www.linkedin.com/in/matteo-meloni-40a357154/)***
