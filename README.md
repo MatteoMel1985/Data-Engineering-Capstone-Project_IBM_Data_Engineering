@@ -39,5 +39,13 @@ This module applies PySpark to analyse e-commerce search-term data. It includes 
 
 [https://coursera.org/verify/X9KMNLL5WF2E](https://coursera.org/verify/X9KMNLL5WF2E)
 
+# IBM Data Engineering Professional Certificate
+
+![Diploma](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/UEMFB1TFB3RD.png?raw=true)  
+
+# [Verification Link](https://coursera.org/verify/professional-cert/UEMFB1TFB3RD)  
+
+[https://coursera.org/verify/professional-cert/UEMFB1TFB3RD](https://coursera.org/verify/professional-cert/UEMFB1TFB3RD)
+
 # Author
 # ***[Matteo Meloni](https://www.linkedin.com/in/matteo-meloni-40a357154/)***
