@@ -170,4 +170,4 @@ mongoexport --host 172.21.200.76 --port 27017 -u root -p INSERT_YOUR_PASSOWRD --
 
 You can finally take a screenshot of the output and save it as `Task 8`.
 
-![Task 8](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%208.png?raw=true)  
+![Task 8](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%208.png?raw=true) 
