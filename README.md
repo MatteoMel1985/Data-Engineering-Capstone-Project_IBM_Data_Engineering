@@ -31,7 +31,7 @@ This module demonstrates how to create and run an Apache Airflow DAG for process
 
 This module applies PySpark to analyse e-commerce search-term data. It includes loading CSV data into a Spark DataFrame, running analytical queries, identifying frequent search terms, and using a pre-trained model to generate a sales forecast.  
 
-# Certificate of Completion  
+<h1 align="center">Certificate of Completion</h1> 
 
 ![Certificate](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/X9KMNLL5WF2E.png?raw=true)  
 
@@ -39,7 +39,7 @@ This module applies PySpark to analyse e-commerce search-term data. It includes 
 
 [https://coursera.org/verify/X9KMNLL5WF2E](https://coursera.org/verify/X9KMNLL5WF2E)
 
-# IBM Data Engineering Professional Certificate
+<h1 align="center">IBM Data Engineering Professional Certificate</h1> 
 
 ![Diploma](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/UEMFB1TFB3RD.png?raw=true)  
 
