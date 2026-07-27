@@ -42,7 +42,7 @@ In the output you should see `accesslog.txt`.
 
 You can take a screenshot of the lab environment and save it as `Exercise 1`.  
 
-![Exercise 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Exercise%20%201.png?raw=true)
+![Exercise 1](./Tasks/Exercise%20%201.png)
 
 # ***Exercise 2 - Create a DAG***  
 
@@ -78,7 +78,7 @@ If desired, replace `your_email@example.com` with your actual address, and `owne
 
 Take a screenshot of the code you have written and save it as `Task 1`.
 
-![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%201.png?raw=true)  
+![Task 1](./Tasks/Task%201.png)  
 
 
 ## ***Task 2 - Define the DAG***  
@@ -127,7 +127,7 @@ catchup=False
 
 You can take a screenshot of the section and save it as `Task 2`. 
 
-![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%202.png?raw=true)  
+![Task 2](./Tasks/Task%202.png)  
 
 ## ***Task 3 - Create a task to extract data***  
 
@@ -171,7 +171,7 @@ This is the name that will appear in the Airflow interface, whereas the shell op
 
 You can now take a screenshot of the section and save it as `Task 3`.  
 
-![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%203.png?raw=true)  
+![Task 3](./Tasks/Task%203.png)  
 
 ## ***Task 4 - Create a task to transform the data in the txt file***  
 
@@ -219,7 +219,7 @@ Python converts each `\\` into one literal backslash before Bash executes the co
 
 You can take a screenshot of the section and save it as `Task 4`.  
 
-![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%204.png?raw=true)  
+![Task 4](./Tasks/Task%204.png)  
 
 ## ***Task 5 - Create a task to load the data***  
 
@@ -247,7 +247,7 @@ tar -cvf /home/project/airflow/dags/capstone/weblog.tar \
 
 You can now take a screenshot of this code section and save it as `Task 5`.  
 
-![Task 5](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%205.png?raw=true)  
+![Task 5](./Tasks/Task%205.png)  
 
 ## ***Task 6 - Define the task pipeline***  
 
@@ -259,7 +259,7 @@ extract_data >> transform_data >> load_data
 
 You can take a picture of this section and save it as `Task 6`.  
 
-![Task 6](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%206.png?raw=true)  
+![Task 6](./Tasks/Task%206.png)  
 
 # ***Exercise 3 - Getting the DAG operational***  
 
@@ -277,7 +277,7 @@ If the dags appear, it means it has been submitted correctly.
 
 You can take a screenshot of the output and save it as `Task 7`.  
 
-![Task 7](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%207.png?raw=true)  
+![Task 7](./Tasks/Task%207.png)  
 
 ## ***Task 8 - Unpause the DAG***  
 
@@ -296,7 +296,7 @@ Once done:
 
 You can take a screenshot of the unpaused DAG and save it as `Task 8`.  
 
-![Task 8](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%208.png?raw=true)  
+![Task 8](./Tasks/Task%208.png)  
 
 ## ***Task 9 - Monitor the DAG***  
 
@@ -304,4 +304,4 @@ Open the DAG by clicking on its name. This opens the DAG details page. Trigger t
 
 Once satisfied, take a screenshot of the graph showing the success of all its activities and save it as `Task 9`.  
 
-![Task 9](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%205/Tasks/Task%209.png?raw=true)
+![Task 9](./Tasks/Task%209.png)
