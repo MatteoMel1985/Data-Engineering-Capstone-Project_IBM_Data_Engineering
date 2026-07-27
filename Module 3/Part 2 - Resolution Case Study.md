@@ -36,17 +36,17 @@ Once the window is opened, name the database `Test1`, and click the `Save` butto
 2. Go to the top menu.
 3. Click: Tools > Query Tool
 
-This opens the diagram editor where you can design the table visually. In the ERD tool, click the Open File button (a small folder icon in the top ribbon). Once the window opens, it should be set by default on the path `/home/`. That is not suitable for uploading the file [CREATE_SCRIPT.sql](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Script%20and%20CSVs/CREATE_SCRIPT.sql). To do so, ensure to navigate on the path `/var/lib/pgadmin/`. Once there, click on the three-dot icon on the upper right of the window and select `Upload`.  
+This opens the diagram editor where you can design the table visually. In the ERD tool, click the Open File button (a small folder icon in the top ribbon). Once the window opens, it should be set by default on the path `/home/`. That is not suitable for uploading the file [CREATE_SCRIPT.sql](./Part%202%20-%20Script%20and%20CSVs/CREATE_SCRIPT.sql). To do so, ensure to navigate on the path `/var/lib/pgadmin/`. Once there, click on the three-dot icon on the upper right of the window and select `Upload`.  
 
-![Screenshot_3](https://raw.githubusercontent.com/MatteoMel1985/Relational-Dataset-Images/2d9f7a02822edb250d639296a849b4ce9cf0316a/Data%20Warehouse/Screenshot_3.PNG)  
+![Screenshot_3](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202491/vxexdlqfnf5hlwicetat.png)  
 
 Drag and drop the file `CREATE_SCRIPT.sql` and, once uploaded, click on the highlighted small `x` icon. 
 
-![Screenshot_4](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_4.PNG?raw=true)  
+![Screenshot_4](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202491/qr8f6sz6ii3hn5tquys4.png)  
 
 Finally, highlight the file `CREATE_SCRIPT.sql`, and click on the `Select` button on the bottom-right corner of the window. You can now run the script and take a screenshot of it.  
 
-![Prepare the lab](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Prepare%20the%20lab.png?raw=true)  
+![Prepare the lab](./Part%202%20-%20Tasks/Prepare%20the%20lab.png)  
 
 ## ***Task 1 - Load data into the dimension table DimDate***   
 
@@ -58,27 +58,27 @@ Servers > PostgreSQL > Databases > Test1 > Schemas > public > Tables
 
 There, you will find the table `DimDate1`. Right-click on it and select `Import/Export Data...`.   Click on the folder on the right side of `Filename`. 
 
-![Screenshot_1](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_1.PNG?raw=true)  
+![Screenshot_1](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202495/fmgjnasqxslnkys7fckj.png)  
 
 Click on the upward pointing arrow on the upper left side of the window and select the following path: `/var/lib/pgadmin/`.  
 
-![Screenshot_2](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_2.PNG?raw=true)  
+![Screenshot_2](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202489/ipetsmwqh6poehy6kefs.png)  
 
 Click on the three-dot icon on the upper right of the window.  
 
-![Screenshot_3](https://raw.githubusercontent.com/MatteoMel1985/Relational-Dataset-Images/2d9f7a02822edb250d639296a849b4ce9cf0316a/Data%20Warehouse/Screenshot_3.PNG)  
+![Screenshot_3](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202491/vxexdlqfnf5hlwicetat.png)  
 
 Drag and drop the file `DimDate.csv` and, once uploaded, click on the highlighted small `x` icon. 
 
-![Screenshot_4](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_4.PNG?raw=true)  
+![Screenshot_4](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202491/qr8f6sz6ii3hn5tquys4.png)  
 
 Choose the `DimDate.csv` file on the screen and click the button `Select` on the lower-right corner of the window. 
 
-![Select](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/03.09.04-DimDate.png?raw=true)
+![Select](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202493/qws9oauquretga4xjqrs.png)
 
 Click on `Options`, select `Header`, and click on the lower-right button `OK`.  
 
-![Screenshot_5](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_5.PNG?raw=true)
+![Screenshot_5](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202494/shus8syxdhtdc0wegqus.png)
 
 Now the table is populated. 
 
@@ -92,7 +92,7 @@ LIMIT 5;
 
 Take a screenshot of the output and name it `Task 1`.  
 
-![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%201.png?raw=true)
+![Task 1](./Part%202%20-%20Tasks/Task%201.png)
 
 ## ***Task 2 - Load data into the dimension table DimCategory***   
 
@@ -106,7 +106,7 @@ LIMIT 5;
 
 Take a screenshot of the output and name it `Task 2`.  
 
-![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%202.png?raw=true)  
+![Task 2](./Part%202%20-%20Tasks/Task%202.png)  
 
 ## ***Task 3 - Load data into the dimension table DimCountry***   
 
@@ -120,7 +120,7 @@ LIMIT 5;
 
 Take a screenshot of the output and name it `Task 3`.  
 
-![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%203.png?raw=true)  
+![Task 3](./Part%202%20-%20Tasks/Task%203.png)  
 
 ## ***Task 4 - Load data into the fact table FactSales***   
 
@@ -134,7 +134,7 @@ LIMIT 5;
 
 Take a screenshot of the output and name it `Task 4`.  
 
-![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%204.png?raw=true)  
+![Task 4](./Part%202%20-%20Tasks/Task%204.png)  
 
 ## ***Task 5 - Create a grouping sets query***   
 
@@ -165,7 +165,7 @@ ORDER BY
 
 Once run, you can take a screenshot of it and save it as `Task 5`.  
 
-![Task 5](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%205.png?raw=true)  
+![Task 5](./Part%202%20-%20Tasks/Task%205.png)  
 
 ## ***Task 6 - Create a rollup query***   
 
@@ -191,7 +191,7 @@ ORDER BY
 
 Once run, you can take a screenshot of it and save it as `Task 6`.  
 
-![Task 6](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%206.png?raw=true)  
+![Task 6](./Part%202%20-%20Tasks/Task%206.png)  
 
 ## ***Task 7 - Create a cube query***   
 
@@ -217,7 +217,7 @@ ORDER BY
 
 Once run, you can take a screenshot of it and save it as `Task 7`.  
 
-![Task 7](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%207.png?raw=true)  
+![Task 7](./Part%202%20-%20Tasks/Task%207.png)  
 
 ## ***Task 8 - Create an MQT***   
 
@@ -240,7 +240,7 @@ GROUP BY c.country;
 
 Once run, you can take a screenshot of it and save it as `Task 8`.  
 
-![Task 8](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%202%20-%20Tasks/Task%208.png?raw=true)
+![Task 8](./Part%202%20-%20Tasks/Task%208.png)
 
 If you wish to save your MQT on your disk, you can run the string below from your terminal. **NOTE**: Ensure to insert the passowrd, host, port, and user provided by your PostgreSQL. 
 
