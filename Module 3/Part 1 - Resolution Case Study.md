@@ -67,7 +67,7 @@ Ensure that the attribute `dateid` is marked as Primary Key. Click on the `Save`
 
 Now you can take a screenshot of the result and save it as `Task 1`.
 
-![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%201.png?raw=true)  
+![Task 1](./Part%201%20-%20Tasks/Task%201.png)  
 
 ## ***Task 2 - Design the dimension table `softcartDimCategory`***  
 
@@ -84,7 +84,7 @@ Repeat the same procedure explained in Task 1, but save the table as `softcartDi
 
 Take a screenshot of the result in your ERD and save it as `Task 2`.  
 
-![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%202.png?raw=true)  
+![Task 2](./Part%201%20-%20Tasks/Task%202.png)  
 
 ## ***Task 3 - Design the dimension table `softcartDimItem`***  
 
@@ -101,7 +101,7 @@ Repeat the same procedure explained in Task 1, but save the table as `softcartDi
 
 Take a screenshot of the result in your ERD and save it as `Task 3`.
 
-![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%203.png?raw=true)  
+![Task 3](./Part%201%20-%20Tasks/Task%203.png)  
 
 ## ***Task 4 - Design the dimension table `softcartDimCountry`***  
 
@@ -118,7 +118,7 @@ Repeat the same procedure explained in Task 1, but save the table as `softcartDi
 
 Take a screenshot of the result in your ERD and save it as `Task 4`.  
 
-![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%204.png?raw=true)  
+![Task 4](./Part%201%20-%20Tasks/Task%204.png)  
 
 ## ***Task 5 - Design the fact table `softcartFactSales`***  
 
@@ -138,6 +138,8 @@ Repeat the same procedure explained in Task 1, but save the table as `softcartFa
 </div>  
 
 Take a screenshot of the result in your ERD and save it as `Task 5`.  
+
+![Task 5](./Part%201%20-%20Tasks/Task%205.png)
 
 ## ***Task 6 - Design the relationships***  
 
@@ -188,7 +190,7 @@ Referenced Column: countryid
 
 Once done, take a picture of the ERD and save it as `Task 6`.  
 
-![Task 6](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%206.png?raw=true)  
+![Task 6](./Part%201%20-%20Tasks/Task%206.png)  
 
 ## ***Task 7 - Create the schema.***  
 
@@ -284,4 +286,4 @@ END;
 
 Take a screenshot of the script and save it as `Task 7`.  
 
-![Task 7](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%203/Part%201%20-%20Tasks/Task%207.png?raw=true)
+![Task 7](./Part%201%20-%20Tasks/Task%207.png)
