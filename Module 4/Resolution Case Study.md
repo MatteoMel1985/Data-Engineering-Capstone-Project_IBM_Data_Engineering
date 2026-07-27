@@ -20,7 +20,7 @@ The screenshot for this task should show that the file `ecommerce.csv` has been 
 
 You can now save the screenshot as `Task 1.png`.  
 
-![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%201.png?raw=true) 
+![Task 1](./Tasks/Task%201.png) 
 
 ## ***Task 2 - List first 10 rows***  
 
@@ -40,7 +40,7 @@ A good table for the screenshot should include several meaningful fields, such a
 
 You can now take a screenshot and save it as `Task 2.png`.  
 
-![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%202.png?raw=true)
+![Task 2](./Tasks/Task%202.png)
 
 # ***Exercise 2 - Accessing the Data Source in Google Looker Studio***  
 
@@ -60,7 +60,7 @@ The screenshot should show the created data source and its fields.
 
 You can now save the screenshot as `Task 3.png`.
 
-![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%203.png?raw=true)
+![Task 3](./Tasks/Task%203.png)
 
 # ***Exercise 3 - Create a dashboard***  
 
@@ -101,7 +101,7 @@ The final result should be a line chart with months on the horizontal axis and t
 
 You can now take a screenshot and save it as `Task 4.png`.
 
-![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%204.png?raw=true)
+![Task 4](./Tasks/Task%204.png)
 
 ## ***Task 5 - Create a pie chart***  
 
@@ -128,7 +128,7 @@ If the chart shows too many categories, you may keep the default grouping or let
 
 You can now take a screenshot and save it as `Task 5.png`.
 
-![Task 5](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%205.png?raw=true)
+![Task 5](./Tasks/Task%205.png)
 
 ## ***Task 6 - Create a bar chart***  
 
@@ -161,4 +161,4 @@ The final result should show one bar for each quarter, usually Q1, Q2, Q3, and Q
 
 You can now take a screenshot and save it as `Task 6`.
 
-![Task 6](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%204/Tasks/Task%206.png?raw=true)
+![Task 6](./Tasks/Task%206.png)
