@@ -59,7 +59,7 @@ XXX document(s) imported successfully. 0 document(s) failed to import.
 
 You can now take a screenshot of the code and its output and save it as `Task1`.  
 
-![Task 1](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%201.png?raw=true)  
+![Task 1](./Tasks/Task%201.png)  
 
 ## ***Task 2 - List all databases***  
 
@@ -83,7 +83,7 @@ show dbs
 
 You can now take a screenshot of the output and save it as `Task 2`.  
 
-![Task 2](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%202.png?raw=true)  
+![Task 2](./Tasks/Task%202.png)  
 
 ## ***Task 3 - List all collections in the `catalog` database***  
 
@@ -101,7 +101,7 @@ show collections
 
 You can now take a screenshot of the output and save it as `Task 3`.
 
-![Task 3](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%203.png?raw=true)  
+![Task 3](./Tasks/Task%203.png)  
 
 ## ***Task 4 - Create an index on the `type` field***  
 
@@ -113,7 +113,7 @@ db.electronics.createIndex({ type: 1 })
 
 `type_1` means that the index is created in ascending order. You can now take a screenshot of the code and its output and save it as `Task 4`.  
 
-![Task 4](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%204.png?raw=true)  
+![Task 4](./Tasks/Task%204.png)  
 
 ## ***Task 5 -Find the count of laptops***  
 
@@ -125,7 +125,7 @@ db.electronics.countDocuments({ type: "laptop" })
 
 You can take a screenshot of the output and save it as `Task 5`.
 
-![Task 5](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%205.png?raw=true)  
+![Task 5](./Tasks/Task%205.png)  
 
 ## ***Task 6 - Count smart phones with 6-inch screen size***  
 
@@ -137,7 +137,7 @@ db.electronics.countDocuments({ type: "smart phone", "screen size": 6 })
 
 Take a screenshot of the output and save it as `Task 6`.  
 
-![Task 6](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%206.png?raw=true)  
+![Task 6](./Tasks/Task%206.png)  
 
 ## ***Task 7 - Find average screen size of smart phones***  
 
@@ -152,7 +152,7 @@ db.electronics.aggregate([
 
 You can now take a screenshot of the output and save it as `Task 7`.  
 
-![Task 7](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%207.png?raw=true)  
+![Task 7](./Tasks/Task%207.png)  
 
 ## ***Task 8 - Export selected fields to a CSV file***  
 
@@ -170,4 +170,4 @@ mongoexport --host 172.21.200.76 --port 27017 -u root -p INSERT_YOUR_PASSOWRD --
 
 You can finally take a screenshot of the output and save it as `Task 8`.
 
-![Task 8](https://github.com/MatteoMel1985/Data-Engineering-Capstone-Project_IBM_Data_Engineering/blob/main/Module%202/Tasks/Task%208.png?raw=true) 
+![Task 8](./Tasks/Task%208.png) 
